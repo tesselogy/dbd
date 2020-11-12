@@ -16,21 +16,19 @@ const getDefaultState = () => {
         selected: 1,
         value: "default"
     }
-};
+}
 export default {
     state: getDefaultState(),
     getters: {
         getWorks(state) {
-
             return state.templates;
         },
         getSelected(state) {
-
             return state.selected;
         },
         getValue(state) {
             return state.value;
-        },
+        }
     },
     mutations: {
         SOCKET_TemplatesUpdate(state, message) {

@@ -17,7 +17,7 @@ Vue.use(
       query: { token: "" }
     }),
     vuex: {
-      store,
+      store: store,
       actionPrefix: "SOCKET_",
       mutationPrefix: "SOCKET_"
     }
