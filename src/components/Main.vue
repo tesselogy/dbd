@@ -1,10 +1,10 @@
 <template>
   <div class="main">
-    <h2 id="absolute" value="getValue">{{ msg }}</h2>
+    <h2 id="absolute" v-bind:value="getValue">{{ msg }}</h2>
     <select class="select-wrapper" v-model="changeSelected" material-select>
       <option v-for="(op,index) in getWorks" v-bind:value="index">{{op.workname}}</option>
     </select>
-    <button class="waves-effect waves-light btn" v-on:click="">Передать</button>
+    <a href="javascript:void(0);"  id="sendbutton" class="waves-effect waves-light btn" v-on:click="return false">Передать</a>
   </div>
 </template>
 
